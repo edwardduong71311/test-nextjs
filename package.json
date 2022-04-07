@@ -1,15 +1,24 @@
 {
-  "name": "my-app",
+  "name": "test-nextjs",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "export": "next build && next export",
+    "start": "next start",
+    "test": "jest",
+    "watch": "jest --watch",
+    "coverage": "jest --collectCoverage --"
   },
   "dependencies": {
+    "@testing-library/jest-dom": "^5.16.4",
+    "@testing-library/react": "^13.0.0",
     "next": "12.1.4",
     "react": "18.0.0",
     "react-dom": "18.0.0"
+  },
+  "devDependencies": {
+    "jest": "^27.5.1"
   }
 }
